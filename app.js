@@ -13,7 +13,7 @@ app.use(bodyParser.json({ extended: false }));
 
 app.use(expenseRoutes)
 
-sequelize
+Expense
     .sync().then((result) => {
         app.listen(5000)
             //    console.log(result)
